@@ -143,7 +143,7 @@ main{
 	display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(image/route.png);
+    background-image: url(route.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
