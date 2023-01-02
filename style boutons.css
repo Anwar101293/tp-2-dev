@@ -1,0 +1,46 @@
+body
+{
+    background-color: black;
+    text-align: center;
+}
+h1
+{ 
+	color: pink;
+	font-family: verdana;
+	font-size: 2em;
+
+}
+
+
+div
+{
+
+    border: 6px solid darkgreen;
+    border-radius: 26px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right:35%;
+    padding: 6px;
+}
+
+button
+{
+	width: 300px;
+	border:2px solid green;
+	border-radius: 26px;
+	background-color: green;
+	padding: 15px 32px;
+	margin-top: 3px;
+}
+
+button:hover
+{
+
+    width: 300px;
+	border:2px solid green;
+	border-radius: 26px;
+	background-color: green;
+	padding: 15px 32px;
+	margin-top: 3px;
+	transform: rotate(5deg);
+}
