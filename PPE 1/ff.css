@@ -1,0 +1,26 @@
+/* CSS pour le forme du formulaire */
+body {
+    background-color: brown;
+}
+.form {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  h1
+  {
+    text-align: center;
+   color: aliceblue;
+  }
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  input, textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+  }

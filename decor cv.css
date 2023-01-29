@@ -1,0 +1,71 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+span{
+    font-weight: bold;
+}
+.container{
+    margin: 0 auto;
+    border: 1px solid green;
+    width: 800px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.container > div{
+    border: 1px solid blue;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+
+h1, h2, h3{
+    font-size: 30px;
+    margin: 10px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.containerTopOne{
+    display: flex;
+    justify-content: space-between;
+}
+
+#img{
+    margin: 30px;
+    max-width : 200px;
+    height : auto;
+}
+.containerTopOne p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.containerInfo{
+    margin-top: 30px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 300px) repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+}
+.containerInfo:last-child{
+    margin-bottom: 30px;
+}
+
+body
+{
+    font-family: verdana;
+}
+

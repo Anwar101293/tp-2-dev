@@ -1,0 +1,178 @@
+body{
+    background-image: url("fond.jpg");
+    font-family: FreeMono, monospace;
+}
+/* Pour le pied de page */
+.d7{
+  background-color:dimgrey;
+  height: 4em;
+    margin-top: 470px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-radius: 10px;
+    border: 2px solid hotpink;
+    
+}
+
+    
+h2, p {
+  color: goldenrod !important;
+  font-family:  FreeMono, monospace;
+  text-align: center;
+  font-size: 1.2em;
+  
+}
+/* forme de ma grande div */
+div.prim{
+  border: 4px solid floralwhite;
+  width:98%;
+  top:7%;
+  height: 568px;
+  position: fixed;
+  left: 1%;
+
+}
+
+div.prim1{
+  border: 4px solid rgb(128, 128, 128);
+  width: 20%;
+  text-align: center;
+  margin: 1%;
+  top: 13%;
+  height: 271.5px;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: 122%;
+  margin-top: 6%;
+    }
+
+    
+  /* Pour ma banniere */
+    
+  header{
+    
+    border: 3px solid pink;
+    border-radius: 10px;
+    text-align: center;
+    width: 97%;
+    margin: 10px;
+    padding: 1px;
+    position: relative;
+    padding-left: 15px;
+   
+    
+    
+  }
+ 
+  iframe{
+    margin: 2%;
+    width: 65%;
+    height: 91%;
+    top: -4%;
+    position: absolute;
+    left: 20px;
+    border: 2px solid black;
+    background-color: azure;
+}
+.Bloc1{
+  margin-top: 13.5px;
+  border: 4px solid red;
+  position: relative;
+  width: 75%;    
+  left: 24%;
+  top: 3%;
+  height: 49%;
+
+  background-repeat: no-repeat;
+  
+}
+
+img{
+  margin-top: 2%;
+  position: absolute;
+  right: 20px;
+  width: 150px;
+  height: 150px;
+  margin-left: 92%;
+  
+  
+
+}
+/* CSS BOUTONS */
+div#menu{
+  width: 100px;
+}
+div#menu ul{
+  padding: 0;
+  width: 100px;
+  border: 3px solid;
+  margin: 1px;
+  border-color: lightblue;
+}
+
+div#menu ul li{
+  position: relative;
+  list-style: none;
+  border-bottom: 2px solid;
+  border-color: lightblue
+}
+div#menu ul ul{
+  position: absolute;
+  top: 0;
+  left: 100px;
+  
+}
+
+div#menu li a {
+  text-decoration: none;
+}
+
+div#menu ul ul{
+  position: absolute;
+  top: 0;
+  left: 100px;
+  display: none;
+}
+
+div#menu ul.niveau1 li.sousmenu:hover ul.niveau2,
+div#menu ul.niveau2 li.sousmenu:hover ul.niveau3{
+  display: block;
+}
+
+div#menu a{
+  color:whitesmoke;
+}
+div#menu li:hover{
+  background:darksalmon;
+}
+div#menu li.sousmenu:hover{
+  background-color: #EBB;
+}
+
+div#menu li a {
+  text-decoration: none;
+  padding: 4px 0 3px 8px;
+  display: block;
+  border-left: 8x solid hotpink;
+  width: 84px;
+}
+div#menu li a:hover{
+  border-left-color: red;
+}
+div#menu ul ul li a:hover{
+  border-left-color: #00FF00;
+}
+div#menu ul ul ul li a:hover{
+  border-left-color: #0000FF;
+}
+    
+
+
+    
+
+    
+        
+       
+        
+
+
