@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture GSB</title>
+    <link rel="stylesheet" href="Facturestyle.css">
+    <script src="Facture script.js"></script> 
+    
+</head>
+<body>
+  
+    <header>
+        <div class="headergauche">
+            <img src="logo.png" >
+        </div>
+        <div class="headerCenter">
+            <input type="text" placeholder="Nom de la compagnie">
+            <input type="text" placeholder="Adresse postale">
+            <input type="text" placeholder="Détails du contact">
+        </div>
+        <div class="headerRight">
+            <h1>FACTURE</h1>
+            <input type="date" placeholder="Date" id="date">
+            <input type="number" placeholder="N° de la facture">
+        </div>
+    </header>
+    <p id="condition">
+        Conditions de paiement, par exemple : dû dans X jours
+      </p>
+
+    <div class="destinataire">
+        
+        <div>
+            <h4>Destinataire</h4>
+            <p>Nom:<input type="text" ></p>
+            <p>Nom de la societé:<input type="text" ></p>
+            <p>Adresse postale:<input type="text" ></p>
+            <p>Telephone:<input type="text" ></p>
+            <p>Email:<input type="email" ></p>
+        </div> 
+        
+
+    
+    
+    <div class="test1">
+        
+        <div>
+            <h4>Envoyez à <input type="text"></h4>
+            <p>Nom: <input type="text"></p>
+            <p>Nom de la societé: <input type="text"></p>
+            <p>Adresse postale: <input type="text"></p>
+            <p>Telephone: <input type="text"></p>
+            <p>Email: <input type="text"></p>
+        </div> 
+
+    </div> </div>
+      
+    <center>
+        <table id="table_descrip">
+            <tr>
+                <td class="description">DESCRIPTION</td>
+                <td class="quantite">QUANTITE</td>
+                <td class="quantite">PRIX UNITAIRE</td>
+                <td class="quantite">TOTAL</td>
+            </tr>
+            <tr class="modeleLigne">
+                <td><input type="text" name="desc" class="input desc" placeholder=""></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" value="0" readonly="readonly"></td>
+            </tr>
+            <tr class="modeleLigne">
+                <td><input type="text" name="desc" class="input desc" placeholder=""></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" value="0" readonly="readonly"></td>
+            </tr>
+            <tr class="modeleLigne">
+                <td><input type="text" name="desc" class="input desc" placeholder=""></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" value="0" readonly="readonly"></td>
+            </tr>
+            <tr id="lastLigne">
+                <td><input type="text" name="desc" class="input desc" placeholder=""></td>
+                <td><input type="text" name="qte" class="input qte" value="0"></td>
+                <td><input type="text" name="prix" class="input prix" value="0"></td>
+                <td><input type="text" name="total" class="totalLigne" value="0" readonly="readonly"></td>
+            </tr>
+        </table>
+    </center>
+
+    <textarea class="remarque" type="text" name="Remarquer" placeholder="Remarques, notes et instructions de paiement"></textarea>
+
+    <table class="calcul">
+        <tr>
+            <td class="stotal">SOUS-TOTAL</td>
+            <td class="total"><input type="text" name="soustotal" id="soustotal"></td>
+        </tr>
+        <tr>
+            <td class="stotal">REMISE</td>
+            <td class="total"><input type="text" name="remise" id="remise" value="10.00"></td>
+        </tr>
+        <tr>
+            <td class="stotal">SOUS-TOTAL MOINS LES REMISES</td>
+            <td class="total"><input type="text" name="sremise" id="sremise"></td>
+        </tr>
+        <tr>
+            <td class="stotal">TAUX D'IMPOSITION</td>
+            <td class="total"><input type="text" name="tauximpo" id="tauximpo" value="10.00%"></td>
+        </tr>
+        <tr>
+            <td class="stotal">TAXE TOTAL</td>
+            <td class="total"><input type="text" name="taxetotal" id="taxetotal"></td>
+        </tr>
+        <tr>
+            <td class="stotal">EXPEDITO, MANUTENTION</td>
+            <td class="total"><input type="text" name="expi" id="expi" value="5.00"></td>
+        </tr>
+        <tr>
+            <td class="stotal"></td>
+             <td class="total"></td>
+        </tr>
+    <tr>
+    <td class="soldu">SOLDE DU</td>
+    <td class="totaldu"><input type="text" class="totaldu" name="totalall" id="totalall"></td>
+    </tr>
+    
+    </table>
+
+    <br>
+    <br>
+    
+    
+    
+    <button class="button" onclick="calculate()">Calculer</button>
+    <button class="button" onclick="ajouterLigne()">Ajouter une ligne</button>
+    <button class="button" onclick="supprimerLigne()">Supprimer une ligne</button>
+    <button class="button" onclick="remplir(); remplirNombres();">Remplir automatiquement</button>
+    <button class="button" onclick="annuler()">Annuler</button>
+
+    
+        
+            
+        
+     
+    
+</body>
+</html>

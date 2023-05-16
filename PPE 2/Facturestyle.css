@@ -1,0 +1,208 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(173,216,230);
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    border-radius: 10px;
+  }
+  
+  header{
+    border-bottom: 2px solid teal;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    color: gray;
+    background-color:teal;
+}
+header div{
+    margin: 10px;
+}
+img{
+    height: 130px;
+}
+.headerCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.headerLeft{
+    width: 20px;
+}
+.headerRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  ;
+  text-decoration: underline;
+}
+    
+.destinataire{
+  display: flex;
+  margin:   50px;
+  justify-content:space-around;
+  
+}
+   h4{
+    font-size: 24px;
+    margin: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-bottom: 1px solid rgb(46, 44, 36);
+    margin: 10px !important;
+   }    
+   
+   #condition {
+    float: right;
+    margin: 10px;
+  }
+  p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+.destinataire input[type="text"] {
+  background: none;
+  border: none;
+  
+}
+.destinataire  input[type="email"]{
+  background: none;
+  border: none;
+}
+    
+.test1 input[type="text"] {
+  background: none;
+  border: none;   
+}
+
+#table_descrip {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#table_descrip tr:first-child {
+  background-color: teal;
+  color: #000000;
+}
+
+#table_descrip th, #table_descrip td {
+  padding: 10px;
+  border-bottom: 1px solid #fff9f9;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ea1919;
+  box-shadow: 0 0 5px rgba(190, 3, 112, 0.5);
+}
+
+.remarque {
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-align: left;
+  resize: both;
+  overflow: auto;
+}
+
+.calcul {
+  border-collapse: collapse;
+  width: 50%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 12px;
+}
+
+.calcul td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.stotal {
+  text-align: left;
+}
+
+.total {
+  text-align: right;
+}
+
+.total input[type="text"] {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+}
+
+.soldu {
+  text-align: right;
+  font-weight: bold;
+}
+
+.totaldu input[type="text"] {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.input:focus, .total input:focus, .totaldu input:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}   
+   
+    
+   
+
+
+
+
+
+
+ 
+    
